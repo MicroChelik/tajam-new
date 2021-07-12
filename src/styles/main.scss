@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;900&display=swap');
+@import './variables';
+
+html body {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+#app {
+  h1 {
+    font-size: 31px;
+    word-spacing: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: $white;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .logo-wrapper{
+    display: flex;
+
+    img{
+      margin-right: 10px;
+    }
+
+    p{
+      font-size: 30px;
+      color: $primary;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #app .container,
+  #app  .container-sm,
+  #app .container-md,
+  #app .container-lg,
+  #app .container-xl {
+    max-width: 960px;
+  }
+}
